@@ -1,12 +1,14 @@
 //the value of userId which should be passed into the collect.js
 async function getUserId() {
-  //   const resp = await fetch("https://www.uuidtools.com/api/generate/v4");
-  //   const uids = await resp.json();
+  // CAUSES CORS ERROR
+
+  // const resp = await fetch("https://www.uuidtools.com/api/generate/v4");
+  // const uids = await resp.json();
+  // return uids[0];
+
   const uuid = crypto.randomUUID();
   return uuid;
 }
-
-const userId = getUserId();
 
 // utils
 function loadCollectScript() {
@@ -48,11 +50,25 @@ if (isRunning) {
   const accept = document.createElement("button");
   const reject = document.createElement("button");
 
-  accept.classList.add("w3-button", "w3-black", "w3-padding-large", "w3-large", "w3-margin");
-  reject.classList.add("w3-button", "w3-black", "w3-padding-large", "w3-large", "w3-margin");
+  accept.classList.add(
+    "w3-button",
+    "w3-black",
+    "w3-padding-large",
+    "w3-large",
+    "w3-margin"
+  );
+  reject.classList.add(
+    "w3-button",
+    "w3-black",
+    "w3-padding-large",
+    "w3-large",
+    "w3-margin"
+  );
 
   accept.textContent = "Accept";
+  accept.setAttribute("id", "accept");
   reject.textContent = "Reject";
+  reject.setAttribute("id", "reject");
   accept.addEventListener("click", function () {
     const isLoaded = document.getElementById("collect");
     if (!isLoaded) {

@@ -1,0 +1,29 @@
+{
+  "name": "anonymised",
+  "version": "1.0.0",
+  "description": "anonymised task",
+  "main": "index.html",
+  "scripts": {
+    "build": "cp index.html dist/ && cp plugin.js dist && cp collect.js dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server .",
+    "cypress:open": "cypress open",
+    "deploy": "npm run build && cd ./cdk && pwd && cdk deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alii-7/anonymised.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alii-7/anonymised/issues"
+  },
+  "homepage": "https://github.com/alii-7/anonymised#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
