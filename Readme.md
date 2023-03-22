@@ -25,7 +25,7 @@ For the WooW factor:
 
    1. I have deployed the app publicly here: http://cdkstack-websitebucket75c24d94-1wl0gtsjjxwrf.s3-website-us-east-1.amazonaws.com/
    2. I have hosted the app using AWS S3
-   3. I have used AWS CDK (IAC) for deployment
+   3. I have used AWS CDK for Infrastructure as code (IAC)
 
 2. Github Actions
 
