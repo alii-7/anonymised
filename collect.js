@@ -55,7 +55,7 @@ window.addEventListener("beforeunload", async () => {
   };
   console.log(body);
 
-  await fetch("https://putsreq.herokuapp.com/ylG2esx9EkW77PmdnsUI", {
+  await fetch("https://putsreq.herokuapp.com/Dt7t2QzUkG18aDTMMcop", {
     method: "POST",
     body: JSON.stringify(body),
     keepalive: true,
