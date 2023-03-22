@@ -4,7 +4,7 @@
   "description": "anonymised task",
   "main": "index.html",
   "scripts": {
-    "build": "cp index.html dist/ && cp plugin.js dist && cp collect.js dist",
+    "build": "mkdir -p dist && cp index.html dist/ && cp plugin.js dist && cp collect.js dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server .",
     "cypress:open": "cypress open",
