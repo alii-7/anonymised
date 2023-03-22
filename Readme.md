@@ -41,5 +41,6 @@ For the WooW factor:
 
 PS:
 
-1. I have removed collect.js on reject button click. This part was not very clear. but i can update if you think i should.
+1. I unload collect.js on reject button click. This part was not very clear in the requirements. but i can update if you want.
 2. POST on unload requirement is not fully working because API is not working.
+3. I have replaced the uuid API with https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID because the uuid API returns CORs error
